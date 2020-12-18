@@ -1,0 +1,1 @@
+<header class="masthead" style="background-image: url(<?php echo base_url();?>static/img/home-bg.jpg)">

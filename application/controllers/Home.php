@@ -5,6 +5,7 @@ class Home extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->helper(array('form', 'url'));
     }
 
     public function index($offset = 0)
@@ -87,10 +88,10 @@ class Home extends CI_Controller
             $this->load->library('upload', $config);
 
             if (!$this->upload->do_upload()) {
-                $error = array('error' => $this->upload->display_errors());
+                print_r($this->upload->display_errors());
                 $post_image = 'post-sample-image.jpg';
             } else {
-                $data = array('upload_data' => $this->upload->data());
+                $data = array('upload_path' => $this->upload->data());
                 $post_image = $_FILES['userfile']['name'];
             }
 
@@ -99,7 +100,7 @@ class Home extends CI_Controller
             // set message
             $this->session->set_flashdata('post_created', 'Your post has been created');
 
-            redirect('home');
+            redirect('home/index');
         }
     }
 

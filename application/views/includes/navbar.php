@@ -1,7 +1,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-          <a class="navbar-brand" href="<?php echo base_url('home'); ?>"><?php echo SITE_NAME ?></a>
+          <a class="navbar-brand" href="<?php echo base_url('home/index'); ?>"><?php echo SITE_NAME ?></a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
               data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -11,7 +11,7 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="<?php echo base_url('home'); ?>">Home</a>
+                      <a class="nav-link" href="<?php echo base_url('home/index'); ?>">Home</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="<?php echo base_url('home/posts'); ?>">Posts</a>

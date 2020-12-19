@@ -28,7 +28,7 @@
     <?php $this->load->view('includes/flash.php'); ?>
 
     <!-- maincontent.php -->
-    <?php $this->load->view('admin/create.php'); ?>
+    <?php $this->load->view('users/create.php'); ?>
 
     <!-- pager.php -->
 

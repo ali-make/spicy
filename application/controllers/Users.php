@@ -23,7 +23,7 @@ class Users extends CI_Controller
             // set message
             $this->session->set_flashdata('user_registered', 'You are now registered and can log in');
 
-            redirect('home');
+            redirect('home/index');
         }
     }
 
@@ -59,12 +59,12 @@ class Users extends CI_Controller
                 // set message
                 $this->session->set_flashdata('user_loggedin', 'You are now logged in');
 
-                redirect('home');
+                redirect('home/index');
             } else {
                 // set message
                 $this->session->set_flashdata('login_failed', 'Login is invalid');
 
-                redirect('home');
+                redirect('home/index');
             }
         }
     }
@@ -80,7 +80,7 @@ class Users extends CI_Controller
         // set message
         $this->session->set_flashdata('user_loggedout', 'You are now logged out');
 
-        redirect('home');
+        redirect('home/index');
     }
 
     // check if username exists

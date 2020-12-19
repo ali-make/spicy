@@ -55,9 +55,7 @@ $route['home/posts'] = 'home/posts';
 $route['home/create'] = 'home/create';
 $route['home/update'] = 'home/update';
 $route['home/(:any)'] = 'home/view/$1';
-
-$route['users/login'] = 'users/login';
-$route['users/register'] = 'users/register';
+$route['home'] = 'home/index';
 
 $route['default_controller'] = 'home/index';
 
